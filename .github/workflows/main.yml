@@ -1,0 +1,15 @@
+name: java with maven Goals
+on:
+   push:
+       branches: ["main"]
+   pull_request:
+         branches: ["main"]
+jobs:
+   build: 
+         run-on: ubuntu-latest
+         steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+            - name: Build
+              run: echo "Build successful"
+   
